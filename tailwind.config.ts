@@ -15,6 +15,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
+  daisyui: {
+    themes: false, // Set to false to disable all themes (light and dark)
+  },
 };
 export default config;
