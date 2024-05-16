@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
 
+//TODO: make this navbar section responsive
+
 const Navbar = () => {
     return (
         <nav className='mt-5'>
