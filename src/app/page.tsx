@@ -1,16 +1,14 @@
-import Banner from '@/components/shared/Banner';
-import Navbar from '@/components/shared/Navbar';
-import FlashCard from '@/components/ui/FlashCard';
+import FlashSale from '@/components/FlashSale/FlashSale';
 import React from 'react';
 
-const page = () => {
+const Home = async () => {
+  const res = await fetch("http://localhost:3004/api/v1/flash-sales")
+  const flashSales = await res.json();
   return (
     <div>
-      {/* <Navbar /> */}
-      {/* <Banner /> */}
-      <FlashCard/>
+      <FlashSale flashSales={flashSales} />
     </div>
   );
 };
 
-export default page;
+export default Home;

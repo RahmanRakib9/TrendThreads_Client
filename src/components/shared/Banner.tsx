@@ -10,7 +10,7 @@ const Banner = () => {
                 <Image alt='Banner Image' src={bannerImg} className="max-w-sm rounded-lg shadow-2xl" />
                 <div>
                     <h1 className="text-5xl font-bold">Aesthetic Clothes!</h1>
-                    <p className="py-6">Check out our collection of aesthetic room decor for your dream room makeover!</p>
+                    <p className="py-6 ">Check out our collection of aesthetic room decor!</p>
                 </div>
             </div>
         </div>
