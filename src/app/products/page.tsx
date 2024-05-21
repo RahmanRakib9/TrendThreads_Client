@@ -10,11 +10,10 @@ const Products = async () => {
     const products = await res.json()
     console.log(products);
     return (
-        <div className='flex flex-col justify-center items-center min-h-screen my-10'>
-            <div className='text-center'>
-                <h1 className='text-4xl'><b>Our Products</b></h1>
-                <h3 className='text-2xl w-2/4 mx-auto'><i>If you are on our site, you have a particular idea of what you are looking for</i></h3>
-            </div>
+        <div className='my-10 flex flex-col justify-center items-center min-h-screen'>
+            <h1 className='text-4xl text-center'><b>Our Products</b></h1>
+            <h3 className='text-2xl w-2/4 mx-auto text-center'><i>If you are on our site, you have a particular idea of what you are looking for</i></h3>
+
             <div className='grid grid-cols-4 gap-4 my-10'>
                 {
                     products.payload.map((product) => <ProductsCard product={product} key={product._id} />)
