@@ -13,7 +13,7 @@ const FlashCard = ({ flashSale }: any) => {
         </h2>
         <p>If a dog chews shoes whose shoes does he choose?</p>
         <div className="card-actions justify-end">
-          <div className="badge badge-outline"><Link href={""}>More About</Link></div>
+          <div className="badge badge-outline"><Link href={`/flash-sales/${flashSale._id}`}>More About</Link></div>
         </div>
       </div>
     </div>
