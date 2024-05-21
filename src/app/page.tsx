@@ -1,4 +1,5 @@
 import FlashSale from '@/components/FlashSale/FlashSale';
+import Banner from '@/components/shared/Banner';
 import React from 'react';
 
 const Home = async () => {
@@ -10,6 +11,7 @@ const Home = async () => {
   const flashSales = await res.json();
   return (
     <div>
+      <Banner />
       <FlashSale flashSales={flashSales} />
     </div>
   );
