@@ -2,6 +2,7 @@ import FlashSale from '@/components/FlashSale/FlashSale';
 import Banner from '@/components/shared/Banner';
 import React from 'react';
 import TopCategory from './TopCategory/page';
+import Products from './products/page';
 
 const Home = async () => {
   const res = await fetch("http://localhost:3004/api/v1/flash-sales", {
@@ -14,7 +15,8 @@ const Home = async () => {
     <div>
       <Banner />
       <FlashSale flashSales={flashSales} />
-      <TopCategory/>
+      <TopCategory />
+      <Products />
     </div>
   );
 };
