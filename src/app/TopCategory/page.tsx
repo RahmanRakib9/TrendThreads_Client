@@ -7,7 +7,7 @@ const TopCategory = async () => {
     const categories = await res.json()
     return (
         <div className='my-10 flex flex-col justify-center items-center min-h-screen'>
-            <h1 className='text-4xl text-center'>Our Category</h1>
+            <h1 className='text-4xl text-center'><b>Our Category</b></h1>
             <h3 className='text-2xl text-center'><i>What do you want to wear?</i></h3>
             <div className='grid grid-cols-2 my-10 gap-4'>
                 {
