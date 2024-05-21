@@ -5,7 +5,7 @@ import FlashCard from '../ui/FlashCard';
 const FlashSale = ({ flashSales }: { flashSales: FlashSale[] }) => {
 
     return (
-        <div className=''>
+        <div className='my-10'>
             <div className='flex justify-between'>
                 <h1 className='text-4xl'>Flash Sales</h1>
                 <button className="btn btn-neutral">View More</button>
