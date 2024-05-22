@@ -1,7 +1,7 @@
 import FlashSale from '@/components/FlashSale/FlashSale';
 import Banner from '@/components/shared/Banner';
 import React from 'react';
-import TopCategory from './TopCategory/page';
+import TopCategory from './category/page';
 import Products from './products/page';
 
 const Home = async () => {
