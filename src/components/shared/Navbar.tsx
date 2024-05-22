@@ -12,7 +12,7 @@ const Navbar = () => {
                 <Link href="/flash-sales">Flash Sale</Link>
                 <Link href="/category">Categories</Link>
                 <Link href="/products">Products</Link>
-                <Link href="/">Admin</Link>
+                <Link href="/admin-dashboard">Admin</Link>
             </div>
         </nav>
     );

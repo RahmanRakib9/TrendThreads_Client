@@ -2,13 +2,12 @@ import ProductsCard from '@/components/ui/ProductsCard';
 import React from 'react';
 
 const Products = async () => {
-    const res = await fetch("http://localhost:3004/api/v1/products", {
+    const res = await fetch("https://trend-threads.vercel.app/api/v1/products", {
         next: {
             revalidate: 30
         }
     })
     const products = await res.json()
-    console.log(products);
     return (
         <div className='my-10 flex flex-col justify-center items-center min-h-screen'>
             <h1 className='text-4xl text-center'><b>Our Products</b></h1>

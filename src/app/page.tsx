@@ -5,7 +5,7 @@ import TopCategory from './category/page';
 import Products from './products/page';
 
 const Home = async () => {
-  const res = await fetch("http://localhost:3004/api/v1/flash-sales", {
+  const res = await fetch("https://trend-threads.vercel.app/api/v1/flash-sales", {
     next: {
       revalidate: 30
     }

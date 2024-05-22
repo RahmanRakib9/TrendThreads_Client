@@ -3,7 +3,7 @@ import CategorySmallerCard from '@/components/ui/CategorySmallerCard';
 import React from 'react';
 
 const TopCategory = async () => {
-    const res = await fetch("http://localhost:3004/api/v1/categories")
+    const res = await fetch("https://trend-threads.vercel.app/api/v1/categories")
     const categories = await res.json()
     return (
         <div className='my-10 flex flex-col justify-center items-center min-h-screen'>
