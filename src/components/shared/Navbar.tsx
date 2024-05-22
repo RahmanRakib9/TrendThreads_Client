@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className='space-x-10 text-center'>
                 <Link href="/">TrendThreads</Link>
                 <Link href="/">Home</Link>
-                <Link href="/">Flash Sale</Link>
+                <Link href="/flash-sales">Flash Sale</Link>
                 <Link href="/">Categories</Link>
                 <Link href="/">Products</Link>
                 <Link href="/">Admin</Link>
