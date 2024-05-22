@@ -4,7 +4,6 @@ import React from 'react';
 const FlashSale = async () => {
     const res = await fetch("http://localhost:3004/api/v1/flash-sales")
     const flashSales = await res.json()
-    console.log(flashSales);
 
     return (
         <div className='my-10'>
