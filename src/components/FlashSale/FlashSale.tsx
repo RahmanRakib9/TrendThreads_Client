@@ -1,8 +1,7 @@
-import { FlashSale } from '@/types';
 import React from 'react';
 import FlashCard from '../ui/FlashCard';
 
-const FlashSale = ({ flashSales }: { flashSales: FlashSale[] }) => {
+const FlashSale = ({ flashSales }: any) => {
 
     return (
         <div className='my-10'>
@@ -12,7 +11,7 @@ const FlashSale = ({ flashSales }: { flashSales: FlashSale[] }) => {
             </div>
             <div className='grid grid-cols-3 gap-4'>
                 {
-                    flashSales.payload.map((flashSale) => <FlashCard flashSale={flashSale} key={flashSale._id} />)
+                    flashSales.payload.map((flashSale: any) => <FlashCard flashSale={flashSale} key={flashSale._id} />)
                 }
             </div>
         </div>

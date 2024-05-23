@@ -13,7 +13,7 @@ const FlashSale = async () => {
             </div>
             <div className='grid grid-cols-3 gap-4'>
                 {
-                    flashSales.payload.map((flashSale) => <FlashCard flashSale={flashSale} key={flashSale._id} />)
+                    flashSales.payload.map((flashSale: any) => <FlashCard flashSale={flashSale} key={flashSale._id} />)
                 }
             </div>
         </div>

@@ -15,7 +15,7 @@ const Products = async () => {
 
             <div className='grid grid-cols-4 gap-4 my-10'>
                 {
-                    products.payload.map((product) => <ProductsCard product={product} key={product._id} />)
+                    products.payload.map((product: any) => <ProductsCard product={product} key={product._id} />)
                 }
             </div>
         </div>
